@@ -1,0 +1,424 @@
+body{
+    padding: 0;
+    background-image: url('new.jpg');
+    background-position:relative;
+    background-size: cover;
+    font-family: sans-serif;
+    
+}
+
+nav{
+    background: linear-gradient(to bottom right,#e03f65,#edcad7);
+    transition: 0.2s;
+    font-family: 'century gothic';
+    font-weight: bolder;
+    font-size: 16px;
+    color: black;
+    
+}
+nav:hover{
+    transform: scale(1.02);
+}
+.navbar {
+  
+    position: fixed; /* Set the navbar to fixed position */
+     /* Full width */
+}
+
+.loginbox{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  
+    width: 350px;
+    height: 420px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+}
+.login{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left:calc(50% - 50px);
+}
+h2{
+    margin: 0;
+    padding: 0 0 20px;
+    color: #ffffff;
+    text-align: center;
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.loginbox input
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="email"],.loginbox input[type="password"],.loginbox input[type="text"]
+{
+    border:none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    height: 40px;
+    color: #fff;
+    font-size:16px;
+}
+::placeholder
+{
+    color: rgba(0,0,0,.5);
+}
+.loginbox input[type="submit"]
+{
+    border:none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+   
+    border-radius: 20px;
+}
+
+#demo{
+    background: #f4a475;
+    font-weight: bold;
+    text-align:center;
+    margin-bottom: 4px;
+}
+.dropdown-menu li{
+    background: linear-gradient(to bottom right,#ffffff,#f8f8f8);
+    
+}
+.dropdown-menu a:hover {
+    background-color:#ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.regbox{
+    position:absolute;
+    left:50%;
+    top:55%;
+    
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 490x;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    background:linear-gradient(rgba(47, 145, 181,0.8),rgba(183, 237, 68,0.8));
+}
+.regbox input[type="text"],.regbox input[type="password"],.regbox input[type="number"],.regbox input[type="email"],.regbox input[type="date"]{
+    border:none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    height: 40px;
+    color: black;
+    font-size:16px;
+}
+label{
+    font-size: 15px;
+}
+#image{
+    border: 1px solid #ccc;
+    display: inline-block;
+	height:100%;
+	width:100%;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.regbox input[type="submit"]{
+    border:none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background-color: #fff202;
+    font-size: 16px;
+    width: 300px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5S;
+}
+.regbox input[type="submit"]:hover
+{
+    transform: scale(1.2);
+    background:#009141;
+    color:#262626;
+    
+}
+.feed{
+    /*position:absolute;
+    top: 53%;
+    left: 50%; 
+    transform: translate(-50%,-50%); */
+    width: 440px;
+    height: 550px;
+    padding: 80px 30px;
+    align-items: center;
+    box-sizing: border-box;
+    background:linear-gradient(to bottom right,#0548b5,rgb(136, 247, 184));
+    
+ 
+}
+.feedback{
+     position:absolute;
+     left:10%;
+     top:20%;
+    background:linear-gradient(to bottom right,#0548b5,rgb(136, 247, 184));
+    
+    padding-bottom: 40px;
+}
+#notif{
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+    border-bottom: 1px solid #262626;
+}
+#notify{
+    border-bottom: 1px solid #262626;
+    color:black;
+    
+    font-size: 23px;
+    border-radius: 8px;
+}
+#eror{
+    background-color: rgba(255, 0, 0,0.4);
+    height: 1.2em;
+    border-left: 5px solid red;
+    width: 100%;
+    
+}
+#ab{
+    color: red;
+    background-color: red;
+}
+
+
+.editprofile{
+   /* background:linear-gradient(#2f91b5,#b7ed44);*/
+   background:linear-gradient(rgba(47, 145, 181,0.8),rgba(183, 237, 68,0.8));
+}
+.editprofile input[type="text"],.editprofile input[type="email"],.editprofile input[type="date"]{
+     border:none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    font-size:16px;
+    transition: 0.3s;
+}
+.editprofile input[type="text"]:hover,.editprofile input[type="email"]:hover,.editprofile input[type="date"]:hover{
+    transform: scale(1.3);
+}
+.editprofile input[type="submit"]{
+    margin-bottom: 40px;
+    border:none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background-color:#1db200;
+    font-size: 16px;
+    width: 300px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .5s;
+}
+.editprofile input[type="submit"]:hover
+{
+    transform: scale(1.2);
+    background: #278400;
+    color:#262626;
+    
+}
+#editpro{
+    transition: 0.2s;
+}
+#editpro:hover{
+    transform: scale(1.15);
+    
+    color:#262626;
+}
+.changepass{
+      background:linear-gradient(rgba(47, 145, 181,0.8),rgba(183, 237, 68,0.8));
+}
+.changepass input[type="password"],.changepass input[type="number"]{
+     border:none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    height: 40px;
+    color: #fff;
+    font-size:16px;
+    text-align: center;
+    transition: 0.3s;
+}
+.changepass input[type="password"]:hover,.changepass input[type="number"]:hover{
+    transform: scale(1.2);
+}
+.changepass input[type="submit"]{
+     margin-bottom: 40px;
+    border:none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background:linear-gradient(to bottom right,#0b8ea8,#0aa82d);
+    font-size: 16px;
+    width: 300px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .5s;
+    
+}
+.changepass input[type="submit"]:hover{
+     transform: scale(1.2);
+    background:linear-gradient(to bottom right,#0a59a8,#c143b1)
+}
+#adminpan{
+    font-size: 50px;
+}
+#custpan{
+    transition: 0.5s;
+    animation-delay: 0.2s;
+}
+#custpan:hover{
+   
+   transform: scaleY(1.1);
+    
+}
+#emppan{
+    transition: 0.5s;
+    animation-delay: 0.2s;
+}
+#emppan:hover{
+   
+   transform: scaley(1.1);
+    
+}
+#costpan{
+    transition: 0.5s;
+    animation-delay: 0.2s;
+}
+#costpan:hover{
+   transform: scaleY(1.1);
+    
+}
+
+#h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+  
+}
+table{
+  width:100%;
+  table-layout: fixed;
+  
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ 
+ }
+ .tbl-content-bills{
+ 
+  overflow:auto;
+  margin-top: 0px;
+  background:linear-gradient(rgba(47, 145, 181,0.8),rgba(183, 237, 68,0.8));
+ }
+.tbl-content{
+  height:500px;
+ 
+  overflow:auto;
+  margin-top: 0px;
+  background:linear-gradient(rgba(47, 145, 181,0.8),rgba(183, 237, 68,0.8));
+ /* border: 1px solid rgba(255,255,255,0.3);*/
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 25px;
+  color: #fff;
+  background: linear-gradient(to bottom right,#ffffff,#f5f5f5);
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+  
+}
+tr{
+    transition: 0.5s;
+}
+tr:hover{
+    transform: scaleX(1.05);
+    transform-origin: left;
+    font-size: 20px;
+    background-color:red;
+}
+
+
+/* demo styles */
+
+
+body{
+ /* background: -webkit-linear-gradient(left, #25c481, #25b7c4);*/
+  /*background: linear-gradient(to bottom right, rgba(37, 196, 129,0.20), rgba(37, 183, 196,0.20)),url('3.png');*/
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  margin: 50px;
+}
+
+
+/* follow me template */
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+
+
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
